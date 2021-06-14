@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int descending (int x,int y)
+{
+    return x>y;
+}
+
+int absolute (int x,int y)
+{
+    return abs(x)>abs(y);
+}
+
+int main()
+{
+   vector<int>vect(5);
+   {
+       int x=3;
+       for(auto &i:vect)
+       {
+           cin>>i;
+       }
+           auto funptr=descending;
+       sort(vect.begin(),vect.end(),funptr);
+       for(auto i:vect)
+        cout<<i<<" ";
+
+        cout<<"\n";
+        auto funptr1=absolute;
+        sort(vect.begin(),vect.end(),funptr1);
+       for(auto i:vect)
+        cout<<i<<" ";
+
+        cout<<"\n";
+
+   }
+    return 0;
+}
