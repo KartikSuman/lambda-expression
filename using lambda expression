@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+   vector<int>vect(5);
+   {
+       int x=3;
+       for(auto &i:vect)
+       {
+           cin>>i;
+       }
+       sort(vect.begin(),vect.end(),[](auto a,auto b){
+                                                        return a>b;});
+       for(auto i:vect)
+        cout<<i<<" ";
+        
+        cout<<"\n";
+   }
+    return 0;
+}
